@@ -1,6 +1,12 @@
 # Learning Git
 
+## Table of Contents
 
+- [Directory Structure](#directory-structure)
+- [Examples and Use Cases](#examples-and-use-cases)
+- [Motivation stats generated using ChatGPT](#motivation-stats-generated-using-chatgpt)
+- [References](#references)
+- [License](#license)
 
 This repository is for practicing and documenting Git commands and workflows.
 
