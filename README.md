@@ -132,3 +132,12 @@ learning-git/
     - **Performance Tuning:** Optimize Git performance for large repositories
       and handle complex scenarios involving Git's lower-level commands and
       settings.
+
+## References
+
+- [Branching patterns](https://www.martinfowler.com/articles/branching-patterns.html): Overview of the branching techniques in the development team.
+- [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html): Insights on continuous integration, which complements version control practices.
+
+## License
+
+This project is licensed under the MIT License.
