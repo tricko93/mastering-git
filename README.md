@@ -15,7 +15,7 @@ This repository is for practicing and documenting Git commands and workflows.
 ## Directory Structure
 
 ```sh
-learning-git/
+mastering-git/
 │
 ├── basics/
 │   ├── introduction.md
