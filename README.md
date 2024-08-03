@@ -1,4 +1,4 @@
-# Learning Git
+# Mastering Git
 
 ## Table of Contents
 
