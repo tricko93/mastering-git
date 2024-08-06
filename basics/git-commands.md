@@ -148,3 +148,46 @@ and can also create new branches on the remote.
       ```sh
           git push --dry-run <remote> <branch>
       ```
+
+5. git pull
+-----------
+The `git pull` command retrieves and integrates changes form a remote
+repository into your local branch.
+
+```sh
+    git pull [<remote>][<branch>]
+```
+**Description:**
+
+- Usage:
+    * `<remote>`: The name of the remote repository (e.g., `origin`). If omitted,
+      Git defaults to the remote configured for the current branch.
+    * `<branch>`: The name of the branch you want to pull from. If omitted, Git
+      pulls from the branch configured for the current branch.
+    * `<remote> <branch>`: Pull changes from a specific remote and branch. For
+      example, `git pull origin main` retrieves changes from the `main` branch
+      on the `origin` remote.
+      ```sh
+          git pull <remote> <branch>
+      ```
+    * `--rebase`: Instead of merging, rebase the changes from the remote branch
+      onto your local branch. This rewrites commit history to create a linear
+      progression of commits.
+      ```sh
+          git pull --rebase <remote> <branch>
+      ```
+    * `--ff-only`: Only perform the pull if it can be fast-forward, meaning the
+      local branch be updated without creating a merge commit.
+      ```sh
+          git pull --ff-only <remote> <branch>
+      ```
+    * `--no-commit`: Automatically merge the changes but do not commit them.
+      This allows you to review changes before committing.
+      ```sh
+          git pull --no-commit <remote> <branch>
+      ```
+    * `--verbose`: Show detailed information about the operations being
+      performed during the pull.
+      ```sh
+          git pull --verbose <remote> <branch>
+      ```
