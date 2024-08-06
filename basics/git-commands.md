@@ -224,3 +224,55 @@ files aren't being tracked by Git.
       ```sh
           git status --untracked-files=all
       ```
+
+7. git log
+----------
+The `git log` command displays the commit history for the current branch. It
+shows a list of commits along with their details, including commit IDs, author
+information, dates, and commit messages.
+
+```sh
+    git log [<options>]
+```
+**Description:**
+
+- Usage:
+    * `--oneline`: Displays each commit on a single line. This provides a
+      concise view of the commit history.
+        ```sh
+            git log --oneline
+        ```
+    * `--graph`: Adds a graphical representation of the branch structure in the
+      output, showing the commit history as a graph.
+      ```sh
+          git log --graph
+      ```
+    * `--decorate`: Shows branch and tag names alongside the commit messages.
+      Useful for identifying where commits are located in relation to branches
+      and tags.
+      ```sh
+          git log --decorate
+      ```
+    * `--pretty=format:"<format>"`: Customizes the output format of the log. The
+      `<format>` can include placeholders for commit information, such as `%h`
+      for abbreviated commit hash, `%an` for author name, and `%s` for commit
+      message.
+      ```sh
+          git log --pretty=format:"%h - %an, %ar : %s"
+      ```
+    * `-n <number>`: Limits the number of commits displayed. For example, `-n 5`
+      shows the last 5 commits.
+      ```sh
+          git log -n 5
+      ```
+    * `--since="<date>"`: Shows commits more recent than the specified date. The
+      date format can be relative (e.g., "2 weeks ago") or absolute (e.g.,
+      "2023-01-01").
+        ```sh
+            git log --since="2 weeks ago"
+        ```
+    * `--until="<date>"`: Shows commits older than the specified date. The date
+      format is similar to `--since`.
+        ```sh
+            git log --until="2023-01-01"
+        ```
