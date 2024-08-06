@@ -191,3 +191,36 @@ repository into your local branch.
       ```sh
           git pull --verbose <remote> <branch>
       ```
+
+6. git status
+-------------
+The `git status` command displays the state of the working directory and the
+staging area. It shows which changes have been staged, which haven't, and which
+files aren't being tracked by Git.
+```sh
+    git status [<options>]
+```
+**Description:**
+
+- Usage:
+    * `-s` or `--short`: Provides a simplified output that is more concise than
+      the default format. This is useful for a quick overview.
+      ```sh
+          git status -s
+      ```
+    * `-b` or `--branch`: Shows the branch information in the output. This is
+      useful if you want to see branch information along with the status.
+      ```sh
+          git status -b
+      ```
+    * `--porcelain`: Outputs the status in a machine-readable format, which is
+      useful for scripts and tools.
+      ```sh
+          git status --porcelain
+      ```
+    * `--untracked-files[=<mode>]`: Controls the display of untracked files. The
+      `<mode>` can be `no`, `normal`, or `all` to specify whether to show
+      untracked files.
+      ```sh
+          git status --untracked-files=all
+      ```
