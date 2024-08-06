@@ -111,3 +111,40 @@ them in the repository's history along with a descriptive message.
       ```sh
           git commit --no-verify -m "Commit message"
       ```
+
+4. git push
+-----------
+The `git push` command is used to upload local repository changes to a remote
+repository. It updates the remote branch with the commits from the local branch
+and can also create new branches on the remote.
+
+```sh
+    git push <remote> <branch>
+```
+**Description:**
+
+- Usage:
+    * `-f` or `--force`: Forcefully pushes your changes to the remote
+      repository, even if it results in non-fast-forward-updates. This can
+      overwrite changes on the remote branch, so use with caution.
+      ```sh
+          git push -f <remote> <branch>
+      ```
+    * `--set-upstream` or `-u`: Sets the upstream branch for the current local
+      branch for the current local branch. After using this option once, you can
+      simply use `git push` without specifying the remote branch.
+      ```sh
+          git push --set-upstream <remote> <branch>
+      ```
+    * `<remote> <branch>`: Push to a different branch on the remote repository
+      by specifying it after the remote name. For example `git push origin mybranch` pushes the local changes to `mybranch` on the remote repository
+      named `origin`.
+      ```sh
+          git push <remote> <branch>
+      ```
+    * `--dry-run`: Simulates the push operaion without actually pushing any
+      changes. Useful for previewing what would be pushed without modifying the
+      remote repository.
+      ```sh
+          git push --dry-run <remote> <branch>
+      ```
