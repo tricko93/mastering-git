@@ -4,7 +4,7 @@
 
 - [Directory Structure](#directory-structure)
 - [Examples and Use Cases](#examples-and-use-cases)
-- [Motivation stats generated using ChatGPT](#motivation-stats-generated-using-chatgpt)
+- [Motivation Stats Generated Using ChatGPT](#motivation-stats-generated-using-chatgpt)
 - [References](#references)
 - [License](#license)
 
@@ -18,16 +18,16 @@ This repository is for practicing and documenting Git commands and workflows.
 mastering-git/
 │
 ├── basics/
-│   ├── introduction.md
-│   └── common-commands.md
+│   ├── basic-concepts.md
+│   └── git-commands.md
 │
 ├── branching/
-│   ├── feature-branches.md
-│   └── merging-strategies.md
+│   ├── branching.md
+│   └── merging.md
 │
 ├── rebasing/
-│   ├── interactive-rebase.md
-│   └── advanced-rebase.md
+│   ├── rebasing.md
+│   └── cherry-picking.md
 │
 ├── advanced/
 │   ├── hooks.md
@@ -101,7 +101,7 @@ mastering-git/
   - **Bisecting:** Use `git bisect` to identify the commit that introduced a bug
     by binary searching through commit history.
 
-## Motivation stats generated using ChatGPT
+## Motivation Stats Generated Using ChatGPT
 
 1. **Basic Proficiency (1-2 weeks)**
 
