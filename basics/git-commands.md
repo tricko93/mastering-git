@@ -69,3 +69,45 @@ preparing them for the next commit.
       ```sh
           git add .
       ```
+
+3. git commit
+-------------
+The `git commit` command creates a snapshot of the staged changes, recording
+them in the repository's history along with a descriptive message.
+
+```sh
+    git commit -m "Commit message"
+```
+
+**Description:**
+
+- Committing Changes:
+    * After staging changes with `git add`, you can commit them using `git
+      commit`.
+    * The commit creates a snapshot of the staged changes, which becomes
+      part of your project's history.
+    * Each commit has a unique ID and an associated commit message, which
+      describes the changes made.
+- Usage:
+    * `-a` or `--all`: Automatically stages all modified and deleted files
+      before committing, effectively skipping the `git add` step. However, new
+      files are not included.
+      ```sh
+          git commit -a -m "Commit message"
+      ```
+    * `--amend`: Allows you to amend the last commit by adding changes to it.
+      Useful for making small adjustments to the previous commit without
+      creating a new one.
+      ```sh
+          git commit --amend
+      ```
+    * `-m` or `--message`: Lets you specify the commit message directly on the
+      command line without opening an editor.
+      ```sh
+          git commit -m "Commit message"
+      ```
+    * `--no-verify`: Skips pre-commit and commit-msg hooks. Use with caution,
+      as it can bypass important checks.
+      ```sh
+          git commit --no-verify -m "Commit message"
+      ```
